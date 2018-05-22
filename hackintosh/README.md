@@ -2,7 +2,7 @@
 
 ## Do you have a good pc but you are tired to use linux?
 
-In the early 2014 I bought an HP Envy in the 2014, after my degree, i had the necessity of work on a couple of project  and my old white MacBook late 2007 was very slow to develop. I found a big deal and i bought this laptop to use it in my next project. \`\`\`
+In the early 2014 I bought an HP Envy in the 2014, after my degree, i had the necessity of work on a couple of project  and my old white MacBook late 2007 was very slow to develop. I found a big deal and i bought this laptop to use it in my next project.
 
 Off course, the first thing i did was install Ubuntu and remove Windows 8 on this laptop to make the setup environment easier. But the experience with Ubuntu was not so nice so i switched to Fedora. It is the most beautiful Linux distribution i've ever had. 
 
