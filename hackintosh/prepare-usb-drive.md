@@ -6,11 +6,15 @@ Prior to installing OS X, it is a good idea to create an OEM recovery USB from W
 
 ### **Installing Clover to USB**
 
-You must determine what the disk identifier is. With the USB plugged in to the computer, use 'diskutil list':  
-
+You must determine what the disk identifier is. With the USB plugged in to the computer, open a terminal and digit:
 
 ```bash
 diskutil list 
+```
+
+The output should look like this:
+
+```bash
 /dev/disk0 (internal, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                        *500.1 GB   disk0
