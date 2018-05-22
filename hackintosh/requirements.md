@@ -9,7 +9,9 @@
 * BCM4352 ac WiFi
 * RTL8111/8168/8411
 
-
+{% hint style="info" %}
+For other models or the official guide go on [https://www.tonymacx86.com/](https://www.tonymacx86.com/)
+{% endhint %}
 
 #### **BIOS settings**
 
