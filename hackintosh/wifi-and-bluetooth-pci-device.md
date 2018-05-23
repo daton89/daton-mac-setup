@@ -6,7 +6,7 @@ Since my laptop use a PCI WiFi and Bluetooth device that is not compatible with 
 
 ![The compatible one ](../.gitbook/assets/whatsapp-image-2018-05-23-at-15.20.26.jpeg)
 
-
+After switch the devices, restarting the computer, both Wifi and Bluetooth are working _magically_ without installing nothing. 
 
 
 
