@@ -6,7 +6,11 @@ Since my laptop use a PCI WiFi and Bluetooth device that is not compatible with 
 
 ![The compatible one ](../.gitbook/assets/whatsapp-image-2018-05-23-at-15.20.26.jpeg)
 
-After switch the devices, restarting the computer, both Wifi and Bluetooth are working _magically_ without installing nothing. 
+After switch the devices, restarting the computer, both Wifi and Bluetooth are working _magically_ without installing anything. 
+
+![I&apos;m now connected to my network. Pic of WiFI panel in preferences.](../.gitbook/assets/screen-shot-2018-05-23-at-16.20.59.png)
+
+![I&apos;m now playing music from my Sony SRS-XB30. Pic of Bluetooth panel in preferences.](../.gitbook/assets/bluetooth.png)
 
 
 
