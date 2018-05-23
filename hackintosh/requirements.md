@@ -1,6 +1,6 @@
 # Requirements
 
-#### Computer Specifics
+## Computer Specifics
 
 * HP Envy 15  J104SL
 * i7-4700MQ @2.4Ghz, 12GB RAM
@@ -13,7 +13,7 @@
 For other models or the official guide go on [https://www.tonymacx86.com/](https://www.tonymacx86.com/)
 {% endhint %}
 
-#### **BIOS settings**
+## **BIOS settings**
 
 To start, set BIOS to Windows 8 defaults.  
   

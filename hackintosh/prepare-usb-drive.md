@@ -4,7 +4,7 @@
 
 Prior to installing OS X, it is a good idea to create an OEM recovery USB from Windows. If anything goes wrong and you want/need to get back to Windows, you can restore it via the USB. Use the utility provided by HP to accomplish this.
 
-### **Installing Clover to USB**
+## **Setup the USB drive**
 
 You must determine what the disk identifier is. With the USB plugged in to the computer, open a terminal and digit:
 
@@ -60,28 +60,27 @@ Finished partitioning on disk1
    2:                  Apple_HFS install_osx             7.7 GB     disk1s2
 ```
 
-Now you need to install clover on the drive: Download [https://github.com/RehabMan/Clover](https://github.com/RehabMan/Clover) and run the Clover Installer package: 
+## **Installing Clover Boot Loader to USB drive**
 
-* select the target of the install to "install\_osx" using "Change Install Location"
-* select "Customize"
-* check "Install for UEFI booting only", "Install Clover in the ESP" will automatically select
-* check "BGM" from Themes
-* check "OsxAptioFixDrv-64" from Drivers64UEFI
+Download [https://github.com/RehabMan/Clover](https://github.com/RehabMan/Clover) and run the Clover Installer package: 
 
-After making your selections you can continue to "Install" the Clover bootloader to your USB.  
-Finally, we need one EFI driver not included in the Clover installer, HFSPlus.efi.  
-It can be downloaded from here: [https://github.com/JrCs/CloverGrowerPro/raw/master/Files/HFSPlus/X64/HFSPlus.efi](https://github.com/JrCs/CloverGrowerPro/raw/master/Files/HFSPlus/X64/HFSPlus.efi).  
-Copy it to /EFI/Clover/drivers64UEFI
+* select the target of the install to `install_osx` using `Change Install Location`
+* select `Customize`
+* check `Install for UEFI booting only`, `Install Clover in the ESP` will automatically select
+* check `BGM` from Themes
+* check `OsxAptioFixDrv-64` from `Drivers64UEFI`
+
+After making your selections you can continue to `Install` the Clover Boot Loader to your USB.  
+Finally, we need one EFI driver not included in the Clover installer, `HFSPlus.efi`.  
+It can be downloaded from [here](https://github.com/JrCs/CloverGrowerPro/raw/master/Files/HFSPlus/X64/HFSPlus.efi), then copy it to `/EFI/Clover/drivers64UEFI`
 
 {% hint style="info" %}
 Please, **DO NOT forget HFSPlus.efi**. Without it, you won't see any HFS+ partitions, including the HFS+ partition that the OS X installer is on.
 {% endhint %}
 
-If you're installing High Sierra \(10.13\) to an SSD, keep in mind that the file system will be APFS, which requires apfs.efi in drivers64UEFI. Without **apfs.efi in drivers64UEFI, Clover will not recognize APFS** boot volumes. You can find apfs.efi at /usr/standalone/i386/apfs.efi inside of "/Applications/Install macOS High Sierra.app/Contents/SharedSupport/BaseSystem.dmg".
+If you're installing High Sierra \(10.13\) to an SSD, keep in mind that the file system will be APFS, which requires `apfs.efi` in `drivers64UEFI`. Without **`apfs.efi` in `drivers64UEFI`, Clover will not recognise APFS** boot volumes. You can find `apfs.efi` at `/usr/standalone/i386/apfs.efi` inside of `/Applications/Install macOS High Sierra.app/Contents/SharedSupport/BaseSystem.dmg`
 
-Now you have the Clover bootloader on the USB, but you still need to configure it correctly.
-
-The resulting drivers64UEFI should look something like this:
+Now you have the Clover bootloader on the USB, the resulting drivers64UEFI should look something like this:
 
 ![](../.gitbook/assets/113866-d6ace5ddb250996e8d35523a71fa7d0d.png)
 
