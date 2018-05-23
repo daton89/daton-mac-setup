@@ -59,6 +59,8 @@ You're almost done! All you need to do is boot from the USB drive and install! F
 11. At the Boot Screen, choose **High Sierra**
 12. Complete macOS installation. The system will automatically reboot.
 
+![](../.gitbook/assets/screenshot0.png)
+
 ##  **Clover Resources**
 
 It is a good idea to become familiar with the software you are using and read the documentation.  
