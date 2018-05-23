@@ -5,5 +5,5 @@
   * [Requirements](hackintosh/requirements.md)
   * [Prepare USB Drive](hackintosh/prepare-usb-drive.md)
   * [Install OSX](hackintosh/install-osx.md)
-* Post install
+  * Post install
 
