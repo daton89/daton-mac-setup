@@ -8,4 +8,5 @@
   * [Post installation](hackintosh/post-install.md)
   * [WiFi and Bluetooth PCI device](hackintosh/wifi-and-bluetooth-pci-device.md)
   * [System Updates](hackintosh/system-updates.md)
+* [Keyboard Mapping](keyboard-mapping.md)
 
