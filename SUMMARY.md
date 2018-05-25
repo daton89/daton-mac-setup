@@ -10,4 +10,5 @@
   * [System Updates](hackintosh/system-updates.md)
   * [Keyboard Mapping](hackintosh/keyboard-mapping.md)
 * [Xcode](xcode.md)
+* [Homebrew](homebrew.md)
 
