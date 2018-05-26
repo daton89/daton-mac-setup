@@ -1,6 +1,6 @@
 # Homebrew
 
-[Homebrew](https://brew.sh/) calls itself _The missing package manager for macOS_ and is an essential tool for any developer.
+[`Homebrew`](https://brew.sh/) calls itself _The missing package manager for macOS_ and is an essential tool for any developer.
 
 ## Installation
 
@@ -134,4 +134,8 @@ brew cask install \
     visual-studio-code \
     vlc
 ```
+
+Cask package are added, updated or removed from the cask registry, you should receive an error message for some of these package. If some package are not available anymore, like `totalfinder`, send me a pull request or remove it from your package install list.
+
+If you want to add other applications, you can try to search from the cli: `brew cask search <app>` or you can go on the [on-line registry](https://caskroom.github.io/search)
 
