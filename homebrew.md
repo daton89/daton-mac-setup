@@ -2,7 +2,7 @@
 
 [Homebrew](https://brew.sh/) calls itself _The missing package manager for macOS_ and is an essential tool for any developer.
 
-### Installation {#installation}
+## Installation
 
 An important dependency before Homebrew can run is the **Command Line Tools** for **Xcode**. These include compilers that will allow you to build things from source, if you are missing this it's available through the App Store &gt; Updates.
 
@@ -109,7 +109,7 @@ brew cask install \
     suspicious-package
 ```
 
-### App Suggestions {#app-suggestions}
+### Suggested Application {#app-suggestions}
 
 Here are some useful apps that are available on Cask.
 
@@ -117,7 +117,6 @@ Here are some useful apps that are available on Cask.
 brew cask install \
     alfred \
     android-file-transfer \
-    asepsis \
     appcleaner \
     caffeine \
     cheatsheet \
