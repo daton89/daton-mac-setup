@@ -123,14 +123,14 @@ brew cask install \
     docker \
     dropbox \
     google-chrome \
-    google-drive \
     google-hangouts \
     flux \
-    pdftk \
     spectacle \
     superduper \
-    totalfinder \
+    # totalfinder \
     transmission \
+    vagrant \
+    virtualbox \
     visual-studio-code \
     vlc
 ```
