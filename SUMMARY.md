@@ -12,4 +12,5 @@
 * [Xcode](xcode.md)
 * [Homebrew](homebrew.md)
 * [iTerm2](iterm2.md)
+* [Gifox](gifox.md)
 
