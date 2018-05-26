@@ -11,4 +11,5 @@
   * [Keyboard Mapping](hackintosh/keyboard-mapping.md)
 * [Xcode](xcode.md)
 * [Homebrew](homebrew.md)
+* [iTerm2](iterm2.md)
 

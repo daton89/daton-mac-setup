@@ -82,7 +82,7 @@ brew list --versions
 
 ### Installation {#installation}
 
-As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the [Homebrew section](http://sourabhbajaj.com/mac-setup/mac-setup/Homebrew/README.html).
+As of December 2015, Cask comes installed with `Homebrew`, if you have not installed `Homebrew` see the previous section.
 
 ### Search {#search}
 
