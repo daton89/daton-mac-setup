@@ -109,5 +109,5 @@ Now open ~/.zshrc and replace ZSH\_THEME="robbyrussell" with ZSH\_THEME="spacesh
 
 Restart iTerm2 and at this point you should have a result like this: 
 
-
+![](.gitbook/assets/2018-05-26-16.43.48.gif)
 
