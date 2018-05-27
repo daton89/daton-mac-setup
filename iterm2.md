@@ -94,6 +94,20 @@ cd ..
 rm -rf fonts/
 ```
 
+#### Setting fonts in iTerm2
+
+ In Preferences &gt; Profiles &gt; Text and select the fonts:
+
+![](.gitbook/assets/iterm-fonts-prefs.png)
+
+{% hint style="info" %}
+If you are using Visual Studio Code and you want to use the Integrated terminal, you should set the same font of iTerm2
+{% endhint %}
+
+Open `VS Code`=&gt; `Cmd + ,` and add this in user settings: 
+
+![](.gitbook/assets/screen-shot-2018-05-27-at-13.13.39.png)
+
 ### We can finally install Spaceship 
 
 In the terminal run:
