@@ -7,20 +7,20 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 #### Using Homebrew {#using-homebrew}
 
 ```text
-$ brew install node
+brew install node
 ```
 
 #### Manage multiple Node Version with nvm {#using-node-version-manager-nvm}
 
 Download and install [nvm](https://github.com/creationix/nvm) by running:
 
-```text
+```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 ```
 
 Then download Node and select your version by running:
 
-```text
+```bash
 source ~/.bashrc        # source your bashrc/zshrc to add nvm to PATH
 command -v nvm          # check the nvm use message
 nvm install node        # install most recent Node stable version
