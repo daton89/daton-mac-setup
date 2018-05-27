@@ -34,7 +34,7 @@ See the [documentation](https://github.com/creationix/nvm#installation) for info
 
 #### Switch automatically the Node and NPM version 
 
-Make sure you have set the `default` alias for nvm - e.g.: `nvm set default 8.11.2`
+Make sure you have set the `default` alias for nvm - e.g.: `nvm alias default 8.11.2`
 
 ```bash
 git clone https://github.com/dijitalmunky/nvm-auto.git ~/.oh-my-zsh/custom/plugins/nvm-auto
