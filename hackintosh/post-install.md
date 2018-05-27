@@ -62,5 +62,5 @@ cp config.plist /Volumes/EFI/EFI/Clover/config.plist
 
 After copying the `config.plist` from the repo to `EFI/Clover/config.plist`, you should customise the `SMBIOS` so you have a unique serial. You can use `Clover Configurator` to do this \(use google to find/download it\). **DO NOT use** `Clover Configurator` to edit your actual `config.plist`. Instead edit a _dummy_ `config.plist` to create the `SMBIOS` data and then use copy/paste with a plist editor \(I use Xcode\) to copy the `SMBIOS` section into my active `config.plist`. `Clover Configurator` is too buggy and cannot be trusted with edits to your real `config.plist`. This guide uses `MacBookPro11,1`. Do not use any other model identifier.
 
-The detailed guide to correctly configure is [here](https://www.tonymacx86.com/threads/guide-how-to-configure-your-systems-smbios-correctly.198155/).
+The detailed guide to correctly configure SMBIOS is [here](https://www.tonymacx86.com/threads/guide-how-to-configure-your-systems-smbios-correctly.198155/).
 
