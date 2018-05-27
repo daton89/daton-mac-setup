@@ -9,6 +9,7 @@
   * [WiFi and Bluetooth PCI device](hackintosh/wifi-and-bluetooth-pci-device.md)
   * [System Updates](hackintosh/system-updates.md)
   * [Keyboard Mapping](hackintosh/keyboard-mapping.md)
+  * [Troubleshooting](hackintosh/troubleshooting.md)
 * [Xcode](xcode.md)
 * [Homebrew](homebrew.md)
 * [iTerm2](iterm2.md)
