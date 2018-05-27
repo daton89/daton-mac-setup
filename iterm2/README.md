@@ -16,7 +16,7 @@ We are going to setup [spaceship-prompt](https://github.com/denysdovhan/spaceshi
 
 The final setup will be like this:
 
-![Image from spaceship-prompt](.gitbook/assets/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif)
+![Image from spaceship-prompt](../.gitbook/assets/36086434-5de52ace-0ff2-11e8-8299-c67f9ab4e9bd.gif)
 
 ### 
 
@@ -98,7 +98,7 @@ rm -rf fonts/
 
  In Preferences &gt; Profiles &gt; Text and select the fonts:
 
-![](.gitbook/assets/iterm-fonts-prefs.png)
+![](../.gitbook/assets/iterm-fonts-prefs.png)
 
 {% hint style="info" %}
 If you are using Visual Studio Code and you want to use the Integrated terminal, you should set the same font of iTerm2
@@ -106,7 +106,7 @@ If you are using Visual Studio Code and you want to use the Integrated terminal,
 
 Open `VS Code`=&gt; `Cmd + ,` and add this in user settings: 
 
-![](.gitbook/assets/screen-shot-2018-05-27-at-13.13.39.png)
+![](../.gitbook/assets/screen-shot-2018-05-27-at-13.13.39.png)
 
 ### We can finally install Spaceship 
 
@@ -123,5 +123,5 @@ Now open ~/.zshrc and replace ZSH\_THEME="robbyrussell" with ZSH\_THEME="spacesh
 
 Restart iTerm2 and at this point you should have a result like this: 
 
-![](.gitbook/assets/2018-05-26-16.43.48.gif)
+![](../.gitbook/assets/2018-05-26-16.43.48.gif)
 

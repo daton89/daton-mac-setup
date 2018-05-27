@@ -12,7 +12,8 @@
   * [Troubleshooting](hackintosh/troubleshooting.md)
 * [Xcode](xcode.md)
 * [Homebrew](homebrew.md)
-* [iTerm2](iterm2.md)
+* [iTerm2](iterm2/README.md)
+  * [Plugins](iterm2/plugins.md)
 * [Gifox](gifox.md)
 * [Node.js](node.js.md)
 
