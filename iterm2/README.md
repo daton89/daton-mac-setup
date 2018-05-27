@@ -101,10 +101,14 @@ rm -rf fonts/
 ![](../.gitbook/assets/iterm-fonts-prefs.png)
 
 {% hint style="info" %}
-If you are using Visual Studio Code and you want to use the Integrated terminal, you should set the same font of iTerm2
-{% endhint %}
+Installing a patched font will mess up the integrated terminal in `Visual Studio Code` unless you use the proper settings. You'll need to go to settings \(`CMD + ,`\) and add or edit the following values:
 
-Open `VS Code`=&gt; `Cmd + ,` and add this in user settings: 
+* for Source Code Pro: `"terminal.integrated.fontFamily": "Source Code Pro for Powerline"`
+* for Meslo: `"terminal.integrated.fontFamily": "Meslo LG M for Powerline"`
+* for other fonts you'll need to check the font name in Font Book.
+
+You can also set the font size e.g.: `"terminal.integrated.fontSize": 14`
+{% endhint %}
 
 ![](../.gitbook/assets/screen-shot-2018-05-27-at-13.13.39.png)
 
