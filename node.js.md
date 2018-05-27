@@ -32,6 +32,20 @@ nvm alias default node  # set the installed stable version as the default Node
 
 See the [documentation](https://github.com/creationix/nvm#installation) for information.
 
+#### Switch automatically the Node and NPM version 
+
+Make sure you have set the `default` alias for nvm - e.g.: `nvm set default 8.11.2`
+
+```bash
+git clone https://github.com/dijitalmunky/nvm-auto.git ~/.oh-my-zsh/custom/plugins/nvm-auto
+```
+
+Add `nvm-auto` to your plugins in `~/.zshrc`.
+
+Add a call to the `nvm_auto_switch` function **after** NVM is initialized in your `.zshrc` file.
+
+Source `.zshrc` in your current shell or restart your shell.
+
 ### npm usage {#npm-usage}
 
 To install a package:
