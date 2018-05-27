@@ -129,3 +129,5 @@ Restart iTerm2 and at this point you should have a result like this:
 
 ![](../.gitbook/assets/2018-05-26-16.43.48.gif)
 
+You can find the official spaceshipt-prompt documentation on  Gitbook here: [https://denysdovhan.com/spaceship-prompt/](https://denysdovhan.com/spaceship-prompt/)
+
