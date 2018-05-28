@@ -16,5 +16,5 @@
   * [Plugins](iterm2/plugins.md)
 * [Gifox](gifox.md)
 * [Node.js](node.js.md)
-* VS Code
+* [VS Code](vs-code.md)
 
