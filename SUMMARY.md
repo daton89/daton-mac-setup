@@ -17,4 +17,5 @@
 * [Gifox](gifox.md)
 * [Node.js](node.js.md)
 * [VS Code](vs-code.md)
+* [SSH](ssh.md)
 
