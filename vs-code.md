@@ -30,7 +30,9 @@ Replace your User from the path of custom css import.
 
 ![The result should look like this.](.gitbook/assets/1_ehwritlj5wtgd3vbbiwglq.png)
 
+## More resources 
 
+{% embed data="{\"url\":\"https://vscodecandothat.com/\",\"type\":\"link\",\"title\":\"VS Code Can Do That?\",\"icon\":{\"type\":\"icon\",\"url\":\"https://vscodecandothat.com/static/favicon.ico\",\"aspectRatio\":0}}" %}
 
 
 
