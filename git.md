@@ -31,11 +31,11 @@ To push code to your GitHub repositories, we're going to use the recommended HTT
 git config --global credential.helper osxkeychain
 ```
 
-### SSH Config for GitHub {#ssh-config-for-github}
+## Adding an SSH key in your GitHub account
 
 The instructions below are referenced from [the official documentation](https://help.github.com/articles/generating-ssh-keys).
 
-#### Check for existing SSH keys {#check-for-existing-ssh-keys}
+### Check for existing SSH keys
 
 First, we need to check for existing SSH keys on your computer. We do this by running:
 
@@ -46,34 +46,47 @@ ls -al ~/.ssh
 
 Check the directory listing to see if you have files named either `id_rsa.pub` or `id_dsa.pub`. If you don't have either of those files then read on, otherwise skip the next section.
 
-#### Generate a new SSH key {#generate-a-new-ssh-key}
+### Generate a new SSH key
 
-If can follow the previous [SSH](https://daton.gitbook.io/daton-mac/~/edit/primary/git) step to generate an ssh key.
-
-#### Add your SSH key to the ssh-agent {#add-your-ssh-key-to-the-ssh-agent}
-
-Run the following commands to add your SSH key to the `ssh-agent`.
+For security reason you can't use the same key between accounts. You must create new keys for each individual account that you want to use. 
 
 ```bash
-eval "$(ssh-agent -s)"
+ssh-keygen -t rsa 
+# Generating public/private rsa key pair.
+# Enter file in which to save the key
+(/Users/tony/.ssh/id_rsa): /Users/tony/.ssh/daton89_github
 ```
 
-If you're running macOS Sierra 10.12.2 or later, you will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain:
+{% hint style="info" %}
+To create a key with a name or path other than the default, specify the full path to the key. For example, to create a key called `my-new-ssh-key`, enter a path like the one shown at the prompt:  `(/Users/tony/.ssh/id_rsa): /Users/tony/.ssh/daton89_github`
+{% endhint %}
 
-```text
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
+Press the Enter or Return key to accept the default location.
+
+Enter and re-enter a passphrase when prompted. The command creates your default identity with its public and private keys. 
+
+Now list the contents of `~/.ssh` to view the key files.
+
+```bash
+ls ~/.ssh
+id_rsa id_rsa.pub daton89_github daton89_github.pub
+```
+
+### Add your SSH key to the ssh-agent
+
+Run the following commands to make sure that the `ssh-agent`is running.
+
+```bash
+eval `ssh-agent
 ```
 
 No matter what operating system version you run you need to run this command to complete this step:
 
 ```bash
-ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/daton89_github
 ```
 
-#### Adding a new SSH key to your GitHub account {#adding-a-new-ssh-key-to-your-github-account}
+### Copy and add the public key to your GitHub account
 
 The last step is to let GitHub know about your SSH key. Run this command to copy your key to your clipboard:
 
@@ -82,4 +95,18 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 Then go to GitHub and [input your new SSH key](https://github.com/settings/ssh/new). Paste your key in the "Key" text box and pick a name that represents the computer you're currently using.
+
+#### More Resources
+
+{% embed data="{\"url\":\"https://help.github.com/articles/generating-ssh-keys\",\"type\":\"link\",\"title\":\"Generating SSH Keys · GitHub Help\",\"icon\":{\"type\":\"icon\",\"url\":\"https://help.github.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Official GitHub documentation\"}" %}
+
+## Adding an SSH Key in your BitBucket account
+
+
+
+#### More Resources
+
+{% embed data="{\"url\":\"https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html\",\"type\":\"link\",\"title\":\"Set up an SSH key - Atlassian Documentation\",\"icon\":{\"type\":\"icon\",\"url\":\"https://s3.amazonaws.com/cac-static-assets-prod/3.15.2/dist/common/images/favicon.png\",\"width\":32,\"height\":32,\"aspectRatio\":1}}" %}
+
+
 
