@@ -1,6 +1,6 @@
 # SSH
 
-## Step One—Create the RSA Key Pair
+## Create the RSA Key Pair
 
 The first step is to create the key pair on the client machine \(there is a good chance that this will just be your computer\):
 
@@ -8,7 +8,7 @@ The first step is to create the key pair on the client machine \(there is a good
 ssh-keygen -t rsa
 ```
 
-## Step Two—Store the Keys and Passphrase
+## Store the Keys and Passphrase
 
 Once you have entered the Gen Key command, you will get a few more questions:
 
@@ -74,6 +74,9 @@ No matter what operating system version you run you need to run this command to 
 
 ```bash
 ssh-add -K ~/.ssh/id_rsa
+
+# you can check your added key with:
+ssh-add -l
 ```
 
 ## More resources 
