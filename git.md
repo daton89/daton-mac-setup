@@ -107,6 +107,21 @@ Then go to GitHub and [input your new SSH key](https://github.com/settings/ssh/n
 
 ## Adding an SSH Key in your BitBucket account
 
+You can generate and add your Key to ssh-agent with the same process used for GitHub. For add  your public key to your account you need to follow these steps:
+
+1. From Bitbucket, choose **Bitbucket settings** from your avatar in the lower left. The **Account settings** page opens.
+2. Click **SSH Keys.**
+3. In your terminal copy the public key with this command: `pbcopy < ~/.ssh/<your pub key name>.pub`
+4. From BitBucket, click **Add key**.
+5. Enter a **Label** for the Key.
+6. Paste the copied public key into the **SSH Key** field.
+7. Click **Save**.
+8. Return to your terminal window and verify your configuration and username by entering the following command: `ssh -T git@bitbucket.org`
+   1. The command message tells you which of your Bitbucket accounts can log in with that key.
+   2. If you get an error message with `Permission denied (publickey)`, check the [Troubleshoot SSH issues](https://confluence.atlassian.com/bitbucket/troubleshoot-ssh-issues-271943403.html) page for help.
+
+Now that you've got an SSH key set up, use the SSH URL the next time you [clone a repository](https://confluence.atlassian.com/bitbucket/clone-a-repository-223217891.html). If you already have a repository that you cloned over HTTPS, [change the remote URL for your repository](https://confluence.atlassian.com/bitbucket/change-the-remote-url-to-your-repository-794212774.html) to use its SSH URL.
+
 
 
 #### More Resources
