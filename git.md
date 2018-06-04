@@ -101,6 +101,28 @@ pbcopy < ~/.ssh/daton89_github.pub
 
 Then go to GitHub and [input your new SSH key](https://github.com/settings/ssh/new). Paste your key in the "Key" text box and pick a name that represents the computer you're currently using.
 
+Return to your terminal window and run the following command: 
+
+```bash
+ssh -T git@github.com
+# Attempts to ssh to GitHub
+```
+
+You may see a warning like this:
+
+```bash
+The authenticity of host 'github.com (IP ADDRESS)' can't be established.RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.Are you sure you want to continue connecting (yes/no)?
+```
+
+Verify that the fingerprint in the message you see matches, then type `yes`:
+
+```bash
+Hi daton89! You've successfully authenticated, but GitHub does not
+provide shell access.
+```
+
+Verify that the resulting message contains your username. If you receive a "permission denied" message, see ["Error: Permission denied \(publickey\)"](https://help.github.com/articles/error-permission-denied-publickey).
+
 #### More Resources
 
 {% embed data="{\"url\":\"https://help.github.com/articles/generating-ssh-keys\",\"type\":\"link\",\"title\":\"Generating SSH Keys · GitHub Help\",\"icon\":{\"type\":\"icon\",\"url\":\"https://help.github.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Official GitHub documentation\"}" %}
