@@ -33,7 +33,7 @@ git config --global credential.helper osxkeychain
 
 ## Adding an SSH key in your GitHub account
 
-The instructions below are referenced from [the official documentation](https://help.github.com/articles/generating-ssh-keys).
+We suggest to use an SSH Key for each account.
 
 ### Check for existing SSH keys
 
@@ -44,11 +44,9 @@ ls -al ~/.ssh
 # Lists the files in your .ssh directory, if they exist
 ```
 
-Check the directory listing to see if you have files named either `id_rsa.pub` or `id_dsa.pub`. If you don't have either of those files then read on, otherwise skip the next section.
+Check the directory listing to see if you have files named either `id_rsa.pub` or `id_dsa.pub`. If you already have this you need to use a different name for your new  SSH Key.
 
 ### Generate a new SSH key
-
-For security reason you can't use the same key between accounts. You must create new keys for each individual account that you want to use. 
 
 ```bash
 ssh-keygen -t rsa 
@@ -61,15 +59,15 @@ ssh-keygen -t rsa
 To create a key with a name or path other than the default, specify the full path to the key. For example, to create a key called `my-new-ssh-key`, enter a path like the one shown at the prompt:  `(/Users/tony/.ssh/id_rsa): /Users/tony/.ssh/daton89_github`
 {% endhint %}
 
-Press the Enter or Return key to accept the default location.
+Change the default location and name and press enter.
 
-Enter and re-enter a passphrase when prompted. The command creates your default identity with its public and private keys. 
+Enter and re-enter a passphrase when prompted. The command creates your identity with its public and private keys. 
 
 Now list the contents of `~/.ssh` to view the key files.
 
 ```bash
 ls ~/.ssh
-id_rsa id_rsa.pub daton89_github daton89_github.pub
+config id_rsa id_rsa.pub daton89_github daton89_github.pub
 ```
 
 ### Add your SSH key to the ssh-agent
@@ -77,13 +75,20 @@ id_rsa id_rsa.pub daton89_github daton89_github.pub
 Run the following commands to make sure that the `ssh-agent`is running.
 
 ```bash
-eval `ssh-agent
+eval 'ssh-agent'
 ```
 
 No matter what operating system version you run you need to run this command to complete this step:
 
 ```bash
 ssh-add -K ~/.ssh/daton89_github
+# Identity added: /Users/tony/.ssh/daton89_github (/Users/tony/.ssh/daton89_github)
+```
+
+To make sure that your key was added to the agent you can run:
+
+```bash
+ssh-add -l
 ```
 
 ### Copy and add the public key to your GitHub account
@@ -91,7 +96,7 @@ ssh-add -K ~/.ssh/daton89_github
 The last step is to let GitHub know about your SSH key. Run this command to copy your key to your clipboard:
 
 ```bash
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/daton89_github.pub
 ```
 
 Then go to GitHub and [input your new SSH key](https://github.com/settings/ssh/new). Paste your key in the "Key" text box and pick a name that represents the computer you're currently using.
