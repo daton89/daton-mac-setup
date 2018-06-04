@@ -85,6 +85,10 @@ When you set up SSH, you create a key pair that contains a private key \(saved t
 
 This first key pair just created is your default SSH identity. I suggest to use it to manage your servers. If you need to manage GitHub or BitBucket accounts you need more than a default identity, you can [set up additional keys](https://confluence.atlassian.com/bitbucket/set-up-additional-ssh-keys-271943168.html).
 
+{% hint style="info" %}
+For security reasons, we recommend that you generate a new SSH key and replace the existing key on your account at least once a year.
+{% endhint %}
+
 ## More resources 
 
 {% embed data="{\"url\":\"https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets\",\"type\":\"link\",\"title\":\"How To Use SSH Keys with DigitalOcean Droplets \| DigitalOcean\",\"description\":\"This guide is for Mac OS X and Linux users. Learn how to use SSH Keys with DigitalOcean Droplets.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.digitalocean.com/favicon.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.digitalocean.com/assets/community/default\_community\_sharing-65c1cc547375d6e37cc45195b3686769.png\",\"width\":1024,\"height\":536,\"aspectRatio\":0.5234375}}" %}
