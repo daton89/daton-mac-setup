@@ -191,7 +191,7 @@ yarn install
 ### Install globally some useful packages
 
 ```bash
-yarn global add pm2
+yarn global add pm2 eslint
 ```
 
 ### **Additional Reading**
