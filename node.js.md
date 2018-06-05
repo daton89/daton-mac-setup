@@ -2,7 +2,7 @@
 
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-### Installation {#installation}
+## Installation
 
 #### Using Homebrew {#using-homebrew}
 
@@ -85,7 +85,7 @@ To uninstall a package:
 npm uninstall [-g] <package>
 ```
 
-### Yarn
+## Yarn
 
 For project with a lot of dependencies, or particular dependencies, we should probably use yarn. 
 
@@ -114,7 +114,7 @@ Note: your profile may be in your `.profile`, `.bash_profile`, `.bashrc`, `.zshr
 
 To have access to Yarn’s executables globally, you will need to set up the `PATH` environment variable in your terminal. To do this, add ``export PATH="$PATH:`yarn global bin`"`` to your profile.
 
-**Upgrade Yarn**
+### **Upgrade Yarn**
 
 Yarn will warn you if a new version is available. To upgrade Yarn, you can do so with Homebrew.
 
@@ -134,7 +134,7 @@ yarn --version
 [Search for an existing issue](https://github.com/yarnpkg/yarn/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20%22Installation%20Problem%22%20in%3Atitle%20) · [Open a new issue](https://github.com/yarnpkg/yarn/issues/new?title=Installation%20Problem:%20[title]&body=%0A**Which%20operating%20system%20are%20you%20using:**%0A%0A%0A**Please%20describe%20the%20steps%20you%20took%20when%20trying%20to%20install%20Yarn%20and%20what%20went%20wrong:**%0A%0A)
 {% endhint %}
 
-#### Usage
+### Usage
 
 Now that you have Yarn installed, you can start using Yarn. Here are some of the most common commands you’ll need.
 
@@ -188,7 +188,13 @@ or
 yarn install
 ```
 
-**Additional Reading**
+### Install globally some useful packages
+
+```bash
+yarn global add pm2
+```
+
+### **Additional Reading**
 
 [How do I use Yarn? There are basic workflows for both creating and consuming Yarn packages that will help you get productive quickly.](https://yarnpkg.com/en/docs/yarn-workflow)
 
