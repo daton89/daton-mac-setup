@@ -8,6 +8,24 @@ You can get `Visual Studio Code` from his [official site](https://code.visualstu
 Instead of downloading and installing `VSCode` manually, you can use `Homebrew` `brew cask install visual-studio-code`
 {% endhint %}
 
+## Installation of useful extensions
+
+Enable the `VSCode CLI` opening VSCode and click `CMD + Shift + P` to open the command tool and type: `Install command`
+
+![](.gitbook/assets/2018-06-06-12.57.07.gif)
+
+Now open a terminal window and type: 
+
+```bash
+code --install-extension EditorConfig.EditorConfig
+code --install-extension codezombiech.gitignore
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension steoates.autoimport
+code --install-extension wix.vscode-import-cost
+
+```
+
 ## Installation of a Font
 
 We are following the article [Multiple Fonts: Alternative to Operator Mono in VSCode](https://medium.com/@zamamohammed/multiple-fonts-alternative-to-operator-mono-in-vscode-7745b52120a0)
