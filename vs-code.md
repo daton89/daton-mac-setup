@@ -23,7 +23,8 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension steoates.autoimport
 code --install-extension wix.vscode-import-cost
-
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension dustinsanders.an-old-hope-theme-vscode
 ```
 
 ## Installation of a Font
