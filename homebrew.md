@@ -125,6 +125,7 @@ brew cask install \
     google-chrome \
     google-hangouts \
     firefox \
+    flycut \
     flux \
     spectacle \
     superduper \
