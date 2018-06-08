@@ -15,5 +15,13 @@ docker run -d --name mongodb \
  Running databases in containers is not suggested for production environment
 {% endhint %}
 
+## Install MongoDB Compass
+
+To manage your MongoDB instance we use Compass:
+
+```bash
+brew cask install mongodb-compass
+```
+
 
 
