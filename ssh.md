@@ -79,6 +79,28 @@ ssh-add -K ~/.ssh/id_rsa
 ssh-add -l
 ```
 
+## Host Key Warning
+
+If you happened to destroy a server directly prior to creating the one that you are connecting to, you may see a message like this:
+
+```bash
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+...
+```
+
+If this is the case, your new server probably has the same IP address as the old, destroyed server, but a different host SSH key. This is fine, and you can remove the warning, by deleting the old server's host key from your system, by running this command:
+
+```bash
+ssh-keygen -R [your.ip.address.here]
+```
+
+Now try connecting to your server again.
+
 ## SSH Best Practices 
 
 When you set up SSH, you create a key pair that contains a private key \(saved to your local computer\) and a public key \(uploaded to a remote server\). This server uses the key pair to authenticate anything the associated account can access. This two-way mechanism prevents man-in-the-middle attacks.
