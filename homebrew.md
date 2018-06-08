@@ -124,10 +124,10 @@ brew cask install \
     dropbox \
     google-chrome \
     google-hangouts \
+    firefox \
     flux \
     spectacle \
     superduper \
-    # totalfinder \
     transmission \
     vagrant \
     virtualbox \
