@@ -22,4 +22,5 @@
 * [GitKraken](gitkraken.md)
 * [Docker](docker.md)
 * [MongoDB](mongodb.md)
+* [Sentry](sentry.md)
 
