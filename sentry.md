@@ -20,5 +20,7 @@ There may need to be modifications to the included `docker-compose.yml` file to 
 
 Note that as long as you have your database bind-mounted, you should be fine stopping and removing the containers without worry.
 
-### 
+{% embed data="{\"url\":\"https://github.com/getsentry/onpremise\",\"type\":\"link\",\"title\":\"getsentry/onpremise\",\"description\":\"onpremise - Sentry On-Premise setup\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars1.githubusercontent.com/u/1396951?s=400&v=4\",\"width\":96,\"height\":96,\"aspectRatio\":1}}" %}
+
+
 
