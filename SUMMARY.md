@@ -23,4 +23,5 @@
 * [Docker](docker.md)
 * [MongoDB](mongodb.md)
 * [Sentry](sentry.md)
+* [Redis](redis.md)
 
