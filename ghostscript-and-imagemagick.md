@@ -52,3 +52,7 @@ If you need to have this software first in your PATH run:
 
 So running `echo 'export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"' >> ~/.zshrc` you will find convert in the path.
 
+```bash
+export PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig
+```
+
