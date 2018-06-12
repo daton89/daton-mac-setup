@@ -17,7 +17,24 @@ brew install pkgconfig
 If you need an older version of `Imagemagick` like the 6: 
 
 ```bash
-brew install imagemagick@6
+brew install imagemagick@6 \
+--with-fftw \
+--with-fontconfig \
+--with-ghostscript \
+--with-hdri \
+--with-liblqr \
+--with-librsvg \
+--with-libwmf \
+--with-little-cms \
+--with-little-cms2 \
+--with-opencl \
+--with-openexr \
+--with-openjpeg \
+--with-openmp \
+--with-pango \
+--with-perl \
+--with-webp \
+--with-x11
 ```
 
 We'll see an output like this: 
