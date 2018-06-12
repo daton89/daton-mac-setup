@@ -85,6 +85,19 @@ To uninstall a package:
 npm uninstall [-g] <package>
 ```
 
+
+
+## npm-link
+
+Symlink a package folder:
+
+```text
+npm link (in package dir)
+npm link [<@scope>/]<pkg>[@<version>]
+
+alias: npm ln
+```
+
 ## Yarn
 
 For project with a lot of dependencies, or particular dependencies, we should probably use yarn. 
