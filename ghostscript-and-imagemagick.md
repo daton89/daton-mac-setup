@@ -6,11 +6,15 @@ We can use Homebrew:
 
 ```bash
 brew install ghostscript
-brew install pkgconfig
-brew install imagemagick
 ```
 
-If you need an older version of Imagemagick like the 6: 
+Now before installing `Imagemagick` we should need:
+
+```bash
+brew install pkgconfig
+```
+
+If you need an older version of `Imagemagick` like the 6: 
 
 ```bash
 brew install imagemagick@6
