@@ -40,7 +40,7 @@ brew install imagemagick@6 \
 We'll see an output like this: 
 
 ```bash
-==> Downloading https://homebrew.bintray.com/bottles/imagemagick@6-6.9.9-51.high_sierra.bottle.tar.gz
+==> Downloading 
 Already downloaded: /Users/tony/Library/Caches/Homebrew/imagemagick@6-6.9.9-51.high_sierra.bottle.tar.gz
 
 This formula is keg-only, which means it was not symlinked into /usr/local,
