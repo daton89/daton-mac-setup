@@ -24,5 +24,9 @@ Note that as long as you have your database bind-mounted, you should be fine sto
 
 {% embed data="{\"url\":\"https://github.com/getsentry/onpremise\",\"type\":\"link\",\"title\":\"getsentry/onpremise\",\"description\":\"onpremise - Sentry On-Premise setup\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars1.githubusercontent.com/u/1396951?s=400&v=4\",\"width\":96,\"height\":96,\"aspectRatio\":1}}" %}
 
+### Install Sentry On Premise in production with a proxy
+
+We would like to install Sentry with the help of Traefik.
+
 
 
