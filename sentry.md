@@ -24,9 +24,15 @@ Note that as long as you have your database bind-mounted, you should be fine sto
 
 {% embed data="{\"url\":\"https://github.com/getsentry/onpremise\",\"type\":\"link\",\"title\":\"getsentry/onpremise\",\"description\":\"onpremise - Sentry On-Premise setup\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars1.githubusercontent.com/u/1396951?s=400&v=4\",\"width\":96,\"height\":96,\"aspectRatio\":1}}" %}
 
-### Install Sentry On Premise in production with a proxy
+### Install Sentry On Premise in production with Docker and Traefik
 
 We would like to install Sentry with the help of Traefik.
 
+The default Sentry On Premise configuration of docker containers work with links, but we need to customise the configuration of networks to make it works with Traefik.
 
+ We can check out this Github repo that i've prepared:
+
+{% embed data="{\"url\":\"https://github.com/daton89/sentry-on-premise\",\"type\":\"link\",\"title\":\"daton89/sentry-on-premise\",\"description\":\"Contribute to sentry-on-premise development by creating an account on GitHub.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars3.githubusercontent.com/u/6856342?s=400&v=4\",\"width\":400,\"height\":400,\"aspectRatio\":1}}" %}
+
+The problem that i had with On Premise was related to communication between containers. Since i didn't figure out why it doesn't work, i found a trick that consist in run before the default configuration to make it install and work and then run the daton89/sentry-on-premise docker-compose file to make it works with Traefik proxy.
 
