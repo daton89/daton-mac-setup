@@ -104,11 +104,11 @@ We are now ready to build and push the image to docker registry.
 sha256:10276f0e2af807d725905c52f020a2a86b29c8caf5cbae2061e50b94f630ab2f
 
 14:28:28 in ~ via ⬢ v8.11.2
-➜ docker tag mongodb-test registry.daton.it/mongodb-test
+➜ docker tag mongodb-test $REGISTRYADDRESS/mongodb-test
 
 14:29:02 in ~ via ⬢ v8.11.2
-➜ docker push registry.daton.it/mongodb-test
-The push refers to repository [registry.daton.it/mongodb-test]
+➜ docker push $REGISTRYADDRESS/mongodb-test
+The push refers to repository [$REGISTRYADDRESS/mongodb-test]
 a0c3435b9e9f: Pushed
 3bdfc7b15c4a: Pushed
 84d5f4a4e9e6: Pushed
