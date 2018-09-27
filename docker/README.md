@@ -382,5 +382,11 @@ And now pull the image. You want just the "tag" image name, which includes the d
 docker pull [YOUR-DOMAIN]/test-image
 ```
 
+## Docker Registry Manager
 
+We can install a useful manager like this:
+
+{% embed data="{\"url\":\"https://github.com/snagles/docker-registry-manager\",\"type\":\"link\",\"title\":\"snagles/docker-registry-manager\",\"description\":\"Web front end for managing multiple private docker registries - snagles/docker-registry-manager\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars0.githubusercontent.com/u/9109441?s=400&v=4\",\"width\":379,\"height\":379,\"aspectRatio\":1}}" %}
+
+We just need to clone the repo and edit the `registry.yml` file, then run `docker-compose up -d` and go to `http://localhost:8080`
 
