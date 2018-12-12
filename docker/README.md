@@ -10,7 +10,7 @@ You can install `Kitematic`  from your terminal running:  `brew cask install kit
 
 ## Create a Private Docker Registry
 
-### Installing Package for Added Security {#step-1-—-installing-package-for-added-security}
+### Installing Package for Added Security <a id="step-1-&#x2014;-installing-package-for-added-security"></a>
 
 We'll install the `apache2-utils` package which contains the `htpasswd` utility that can easily generate password hashes Nginx can understand:
 
@@ -18,7 +18,7 @@ We'll install the `apache2-utils` package which contains the `htpasswd` utility 
 sudo apt-get -y install apache2-utils
 ```
 
-### Installing and Configuring the Docker Registry {#step-2-—-installing-and-configuring-the-docker-registry}
+### Installing and Configuring the Docker Registry <a id="step-2-&#x2014;-installing-and-configuring-the-docker-registry"></a>
 
 Docker Compose allows you to write one `.yml` configuration file for the configuration for each container 
 
@@ -65,7 +65,7 @@ networks:
 
 Docker registry's data all gets stored in `~/docker-registry/data` on our local machine.
 
-### Setting Up an Nginx Container {#step-3-—-setting-up-an-nginx-container}
+### Setting Up an Nginx Container <a id="step-3-&#x2014;-setting-up-an-nginx-container"></a>
 
 Let's get to work on fixing these security issues. The first step is to set up a copy of Nginx inside another Docker container and link it up to our Docker registry container.
 
@@ -230,7 +230,7 @@ You should see the same output:
 {}
 ```
 
-### Setting Up Authentication {#step-4-—-setting-up-authentication}
+### Setting Up Authentication <a id="step-4-&#x2014;-setting-up-authentication"></a>
 
 Set up HTTP authentication so that we can control who has access to our Docker registry. To do that we'll create an authentication file in Apache format \(Nginx can read it too\) via the `htpasswd` utility we installed earlier and add users to it.
 
@@ -306,7 +306,7 @@ You should get the same output you were getting before — the empty json object
 
 Go ahead and use `CTRL-C` in the `docker-compose` terminal to shut down the Docker containers.
 
-### Starting Docker Registry as a Service {#step-8-—-starting-docker-registry-as-a-service}
+### Starting Docker Registry as a Service <a id="step-8-&#x2014;-starting-docker-registry-as-a-service"></a>
 
 Let's go ahead and start it up to make sure everything is in order:
 
@@ -364,7 +364,7 @@ Now we can push that image to our registry. This time we're using the tag name o
 docker push [YOUR-DOMAIN]/test-image
 ```
 
-### Pull from Your Docker Registry {#step-11-—-pull-from-your-docker-registry}
+### Pull from Your Docker Registry <a id="step-11-&#x2014;-pull-from-your-docker-registry"></a>
 
 To make sure everything worked, let's go back to our original server \(where you installed the Docker registry\) and pull the image we just pushed from the client. You could also test this from a third server.
 
@@ -386,7 +386,7 @@ docker pull [YOUR-DOMAIN]/test-image
 
 We can install a useful manager like this:
 
-{% embed data="{\"url\":\"https://github.com/snagles/docker-registry-manager\",\"type\":\"link\",\"title\":\"snagles/docker-registry-manager\",\"description\":\"Web front end for managing multiple private docker registries - snagles/docker-registry-manager\",\"icon\":{\"type\":\"icon\",\"url\":\"https://github.com/fluidicon.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://avatars0.githubusercontent.com/u/9109441?s=400&v=4\",\"width\":379,\"height\":379,\"aspectRatio\":1}}" %}
+{% embed url="https://github.com/snagles/docker-registry-manager" %}
 
 We just need to clone the repo and edit the `registry.yml` file, then run `docker-compose up -d` and go to `http://localhost:8080`
 

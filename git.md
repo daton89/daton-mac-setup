@@ -125,7 +125,7 @@ Verify that the resulting message contains your username. If you receive a "perm
 
 #### More Resources
 
-{% embed data="{\"url\":\"https://help.github.com/articles/generating-ssh-keys\",\"type\":\"link\",\"title\":\"Generating SSH Keys · GitHub Help\",\"icon\":{\"type\":\"icon\",\"url\":\"https://help.github.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Official GitHub documentation\"}" %}
+{% embed url="https://help.github.com/articles/generating-ssh-keys" caption="Official GitHub documentation" %}
 
 ## Adding an SSH Key in your BitBucket account
 
@@ -148,7 +148,7 @@ Now that you've got an SSH key set up, use the SSH URL the next time you [clone 
 
 #### More Resources
 
-{% embed data="{\"url\":\"https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html\",\"type\":\"link\",\"title\":\"Set up an SSH key - Atlassian Documentation\",\"icon\":{\"type\":\"icon\",\"url\":\"https://s3.amazonaws.com/cac-static-assets-prod/3.15.2/dist/common/images/favicon.png\",\"width\":32,\"height\":32,\"aspectRatio\":1}}" %}
+{% embed url="https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html" %}
 
 
 

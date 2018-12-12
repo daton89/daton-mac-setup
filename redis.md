@@ -1,6 +1,6 @@
 # Redis
 
-##  Running Redis in a docker container {#running-mongodb-in-a-docker-container}
+##  Running Redis in a docker container <a id="running-mongodb-in-a-docker-container"></a>
 
 Open a terminal window an run:
 

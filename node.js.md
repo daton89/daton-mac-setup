@@ -4,13 +4,13 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ## Installation
 
-#### Using Homebrew {#using-homebrew}
+#### Using Homebrew <a id="using-homebrew"></a>
 
 ```text
 brew install node
 ```
 
-#### Manage multiple Node Version with nvm {#using-node-version-manager-nvm}
+#### Manage multiple Node Version with nvm <a id="using-node-version-manager-nvm"></a>
 
 Download and install [nvm](https://github.com/creationix/nvm) by running:
 
@@ -46,7 +46,7 @@ Add a call to the `nvm_auto_switch` function **after** NVM is initialized in you
 
 Source `.zshrc` in your current shell or restart your shell.
 
-### npm usage {#npm-usage}
+### npm usage <a id="npm-usage"></a>
 
 To install a package:
 

@@ -43,7 +43,7 @@ Now you should install a framework, we'll use [Oh My Zsh](https://github.com/rob
 
 The configuration file for `zsh` is called `.zshrc` and lives in your home folder \(`~/.zshrc`\).
 
-### Oh My Zsh {#oh-my-zsh}
+### Oh My Zsh <a id="oh-my-zsh"></a>
 
 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open source, community-driven framework for managing your `zsh` configuration. It comes with a bunch of features out of the box and improves your terminal experience.
 

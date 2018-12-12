@@ -53,13 +53,13 @@ Replace your User from the path of custom css import.
 
 Chrome Debugger allows front-end developers to debug their client-side JavaScript code running inside Google Chrome directly from Visual Studio Code.
 
-### To get started {#_to-get-started}
+### To get started <a id="_to-get-started"></a>
 
 To get started, open the **Extensions** view \(⇧⌘X\). When the extension list appears, type 'chrome' to filter the list and install the `Debugger for Chrome` extension. You'll then create a launch-configuration file which is explained in detail in the README [right here](https://github.com/Microsoft/vscode-chrome-debug).
 
 You can either setup VS Code to connect to an already running Chrome instance or simply start a new one with remote debugging enabled, but read more about that in our [README](https://github.com/Microsoft/vscode-chrome-debug).
 
-### Supported features {#_supported-features}
+### Supported features <a id="_supported-features"></a>
 
 Support for the following features:
 
@@ -110,11 +110,11 @@ A new Chrome window with debugger mode enabled will appear on our screen.
 
 ![](.gitbook/assets/2018-06-13-13.27.53.gif)
 
-{% embed data="{\"url\":\"https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code?WT.mc\_id=vscodecandothat-dotcom-team\",\"type\":\"link\",\"title\":\"Introducing Chrome Debugging for VS Code\",\"description\":\"Chrome debugger extension for Visual Studio Code\",\"icon\":{\"type\":\"icon\",\"url\":\"https://code.visualstudio.com/favicon.ico\",\"width\":128,\"height\":128,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://code.visualstudio.com/opengraphimg/opengraph-blog.png\",\"width\":1223,\"height\":630,\"aspectRatio\":0.5151267375306623}}" %}
+{% embed url="https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code?WT.mc\_id=vscodecandothat-dotcom-team" %}
 
 ## More resources 
 
-{% embed data="{\"url\":\"https://vscodecandothat.com/\",\"type\":\"link\",\"title\":\"VS Code Can Do That?\",\"icon\":{\"type\":\"icon\",\"url\":\"https://vscodecandothat.com/static/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://vscodecandothat.com/" %}
 
 
 

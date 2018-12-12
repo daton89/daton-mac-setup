@@ -40,14 +40,7 @@ brew install imagemagick@6 \
 We'll see an output like this: 
 
 ```bash
-==> Downloading 
-Already downloaded: /Users/tony/Library/Caches/Homebrew/imagemagick@6-6.9.9-51.high_sierra.bottle.tar.gz
-
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because this is an alternate version of another formula.
-
-If you need to have this software first in your PATH run:
-    echo 'export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"' >> ~/.zshrc
+==> Downloading https://homebrew.bintray.com/bottles/imagemagick@6-6.9.9-51.high_sierra.bottle.tar.gz
 ```
 
 So running `echo 'export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"' >> ~/.zshrc` you will find convert in the path.

@@ -113,7 +113,7 @@ For security reasons, we recommend that you generate a new SSH key and replace t
 
 ## More resources 
 
-{% embed data="{\"url\":\"https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets\",\"type\":\"link\",\"title\":\"How To Use SSH Keys with DigitalOcean Droplets \| DigitalOcean\",\"description\":\"This guide is for Mac OS X and Linux users. Learn how to use SSH Keys with DigitalOcean Droplets.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.digitalocean.com/favicon.ico\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.digitalocean.com/assets/community/default\_community\_sharing-65c1cc547375d6e37cc45195b3686769.png\",\"width\":1024,\"height\":536,\"aspectRatio\":0.5234375}}" %}
+{% embed url="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets" %}
 
 
 

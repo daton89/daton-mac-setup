@@ -28,7 +28,7 @@ brew doctor
 
 
 
-## Using Homebrew {#using-homebrew}
+## Using Homebrew <a id="using-homebrew"></a>
 
 To install a package \(or **Formula** in Homebrew vocabulary\) simply type:
 
@@ -76,15 +76,15 @@ brew list --versions
 
 
 
-## Homebrew Cask {#homebrew-cask}
+## Homebrew Cask <a id="homebrew-cask"></a>
 
 [Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.
 
-### Installation {#installation}
+### Installation <a id="installation"></a>
 
 As of December 2015, Cask comes installed with `Homebrew`, if you have not installed `Homebrew` see the previous section.
 
-### Search {#search}
+### Search <a id="search"></a>
 
 To see if an app is available on Cask you can search on the [official Cask website](https://caskroom.github.io/). You can also search using the following command:
 
@@ -92,7 +92,7 @@ To see if an app is available on Cask you can search on the [official Cask websi
 brew cask search <package>
 ```
 
-### Quick Look plugins {#quick-look-plugins}
+### Quick Look plugins <a id="quick-look-plugins"></a>
 
 These plugins adds support for the corresponding file type to Mac Quick Look \(In Finder, mark a file and press Space to start Quick Look\). The plugins includes features like syntax highlighting, markdown rendering, preview of JSON, patch files, csv, zip files and more.
 
@@ -109,7 +109,7 @@ brew cask install \
     suspicious-package
 ```
 
-### Suggested Application {#app-suggestions}
+### Suggested Application <a id="app-suggestions"></a>
 
 Here are some useful apps that are available on Cask.
 

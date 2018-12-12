@@ -18,7 +18,7 @@ Now you can go in the preferences panel and activate the use of ssh-agent. Using
 
 ## More resources 
 
-{% embed data="{\"url\":\"https://www.gitkraken.com/\",\"type\":\"link\",\"title\":\"Git GUI for Windows, Mac & Linux \| GitKraken\",\"description\":\"Unleash the Kraken! GitKraken is the legendary Git GUI client for Windows, Mac and Linux. Git beginners and advanced users will increase efficiency through the intuitive interface, seamless integrations and a faster, more fluid workflow. Download this powerful Git GUI client for free now!\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.gitkraken.com/android-chrome-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.gitkraken.com/img/og-image.jpg\",\"width\":1000,\"height\":563,\"aspectRatio\":0.563}}" %}
+{% embed url="https://www.gitkraken.com/" %}
 
 
 
