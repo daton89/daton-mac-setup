@@ -28,7 +28,8 @@
 * [Redis](redis.md)
 * [Ghostscript and Imagemagick](ghostscript-and-imagemagick.md)
 * [Codeanywhere](codeanywhere.md)
-* [Kubernetes](kubernetes.md)
-* [Kubernetes managed by StackPointCloud](kubernetes-managed-by-stackpointcloud.md)
 * [Terraform](terraform.md)
+* [Kubernetes](kubernetes-1/README.md)
+  * [Kubernetes on DigitalOcean](kubernetes-1/kubernetes.md)
+  * [Kubernetes managed by StackPointCloud](kubernetes-1/kubernetes-managed-by-stackpointcloud.md)
 

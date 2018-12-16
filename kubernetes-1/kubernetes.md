@@ -1,4 +1,4 @@
-# Kubernetes
+# Kubernetes on DigitalOcean
 
 ## **Install kubectl, the official Kubernetes command-line tool**
 
