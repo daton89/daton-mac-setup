@@ -31,6 +31,8 @@
 * [Codeanywhere](codeanywhere.md)
 * [Terraform](terraform.md)
 * [Kubernetes](kubernetes-1/README.md)
+  * [Docker Desktop for Mac](kubernetes-1/docker-desktop-for-mac.md)
   * [Kubernetes on DigitalOcean](kubernetes-1/kubernetes.md)
+  * [K8S with Traefik as IC](kubernetes-1/k8s-with-traefik-as-ic.md)
   * [Kubernetes managed by StackPointCloud](kubernetes-1/kubernetes-managed-by-stackpointcloud.md)
 
