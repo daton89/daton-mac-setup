@@ -22,6 +22,7 @@
 * [GitKraken](gitkraken.md)
 * [Docker](docker/README.md)
   * [Remove Docker things](docker/remove-docker-things.md)
+  * [Env vars](docker/env-vars.md)
   * [Frequently used commands](docker/frequently-used-commands.md)
 * [MongoDB](mongodb.md)
 * [Postgres](postgres.md)
