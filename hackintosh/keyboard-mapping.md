@@ -12,5 +12,13 @@ The function of Fn+F1..F12 and F1..F12 can be changed in SysPrefs-&gt;Keyboard.
 
 Personally i only changed the **right ctrl** to be mapped to the **right alt**.
 
+### Troubleshooting 
+
+If you get issues with keyboard mapping and you decide to reset it:   
+  
+`sudo rm /Library/Preferences/com.apple.keyboardtype.plist`  
+  
+and then reboot. After reboot the Assistant asks to verify the layout, bingo !
+
 
 
