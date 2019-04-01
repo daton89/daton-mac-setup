@@ -38,4 +38,5 @@
   * [K8S with Traefik as IC](kubernetes-1/k8s-with-traefik-as-ic.md)
   * [Kubernetes managed by StackPointCloud](kubernetes-1/kubernetes-managed-by-stackpointcloud.md)
 * [Web Apps](web-apps.md)
+* [Use a minikube locally](use-a-minikube-locally.md)
 
