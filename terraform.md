@@ -10,5 +10,7 @@
 brew install terraform
 ```
 
+{% embed url="https://learn.hashicorp.com/terraform/getting-started/install.html\#installing-terraform" %}
+
 
 
