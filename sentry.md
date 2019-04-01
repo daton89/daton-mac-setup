@@ -9,7 +9,7 @@ If you build Web Application, you probably use Sentry. We are going to setup a s
 Clone of fork Sentry On Premise: 
 
 ```bash
-git clone https://github.com/getsentry/onpremise.git ~/Projects/SentryOnPremise
+git clone https://github.com/getsentry/onpremise.git ~/Projects/onpremise
 ```
 
 There may need to be modifications to the included `docker-compose.yml` file to accommodate your needs or your environment. These instructions are a guideline for what you should generally do.
@@ -22,7 +22,9 @@ There may need to be modifications to the included `docker-compose.yml` file to 
 
 Note that as long as you have your database bind-mounted, you should be fine stopping and removing the containers without worry.
 
-{% embed url="https://github.com/getsentry/onpremise" %}
+## Production configuration
+
+We can use this forked repo for use Sentry in a production environment in combination with [Traefik](https://traefik.io/).
 
 ### Install Sentry On Premise in production with Docker and Traefik
 
@@ -35,4 +37,21 @@ The default Sentry On Premise configuration of docker containers work with links
 {% embed url="https://github.com/daton89/sentry-on-premise" %}
 
 The problem that i had with On Premise was related to communication between containers. Since i didn't figure out why it doesn't work, i found a trick that consist in run before the default configuration to make it install and work and then run the daton89/sentry-on-premise docker-compose file to make it works with Traefik proxy.
+
+```bash
+git clone https://github.com/daton89/sentry-on-premise.git ~/Projects/sentry-on-premise
+```
+
+After you make changes in config.yml, you must remove existing sentry containers. And when you rerun docker-compose, it will build new images with updated config.  
+`docker-compose stop`  
+`docker-compose down`  
+`docker images`  
+`docker rmi -f <image_ids>`  
+`docker-compose up -d`
+
+\`docker-compose stop && docker-compose down && rm -rf data/\`
+
+
+
+{% embed url="https://github.com/getsentry/onpremise" %}
 
