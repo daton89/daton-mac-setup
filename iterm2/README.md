@@ -74,7 +74,7 @@ source ~/.zshrc
 Add plugins to your shell by adding the name of the plugin to the `plugin` array in your `.zshrc`.
 
 ```bash
-plugins=(git colored-man colorize brew osx zsh-syntax-highlighting)
+plugins=(git colored-man-pages colorize brew osx zsh-syntax-highlighting)
 ```
 
 You'll find a list of all plugins on the [Oh My Zsh Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins). Note that adding plugins can cause your shell startup time to increase.
