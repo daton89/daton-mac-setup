@@ -10,6 +10,7 @@
   * [System Updates](hackintosh/system-updates.md)
   * [Keyboard Mapping](hackintosh/keyboard-mapping.md)
   * [Troubleshooting](hackintosh/troubleshooting.md)
+* [Windows with WSL](windows-with-wsl.md)
 * [Xcode](xcode.md)
 * [Homebrew](homebrew.md)
 * [iTerm2](iterm2/README.md)
