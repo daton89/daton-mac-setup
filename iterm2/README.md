@@ -59,6 +59,24 @@ The installation script should set `zsh` to your default shell, but if it doesn'
 chsh -s $(which zsh)
 ```
 
+{% hint style="info" %}
+Only for Linux: 
+
+We can get an error: _chsh: /home/linuxbrew/.linuxbrew/bin/zsh is an invalid shell_
+
+To fix this error we need to add zsh in the list of the available shells in the system, so run: 
+
+```bash
+command -v zsh | sudo tee -a /etc/shells
+```
+
+Then we can set zsh as default shell with: 
+
+```bash
+sudo chsh -s "$(command -v zsh)" "${USER}"
+```
+{% endhint %}
+
 #### Configuration
 
 The out-of-the-box configuration is usable but you probably want to customise it to suit your needs. The [Official Wiki](https://github.com/robbyrussell/oh-my-zsh/wiki) contains a lot of useful information if you want to deep dive into what you can do with Oh My Zsh, but we'll cover the basics here.
