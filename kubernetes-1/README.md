@@ -1,44 +1,72 @@
 # Kubernetes
 
-Use the Kubernetes command-line tool, [kubectl](https://kubernetes.io/docs/user-guide/kubectl/), to deploy and manage applications on Kubernetes. Using kubectl, you can inspect cluster resources; create, delete, and update components; look at your new cluster; and bring up example apps.
+## Prerequisites
+
+Use the Kubernetes command-line tool, [kubectl](https://kubernetes.io/docs/user-guide/kubectl/), to deploy and manage applications on Kubernetes. Using kubectl, you can inspect cluster resources; create, delete, and update components; look at your new cluster; and bring up apps.
 
 {% embed url="https://kubernetes.io/docs/tasks/tools/install-kubectl/" %}
 
-### Install Helm
+For development and practice you can use a Minikube cluster, but it only intended for testing without pay for a cluster in a provider. 
 
-We can install Helm with _brew_ just running in a terminal: 
+## Useful commands
+
+### Deployments and status
+
+Start deployment:
 
 ```bash
-brew install kubernetes-helm
+kubectl apply -f nginx-deployment.yaml
 ```
 
-Then we need to initialise it:
+Check the status of a deployment:
 
 ```bash
-helm init
+kubectl rollout status deployments nginx-deployment
 ```
 
-### Useful commands
-
-The purpose of Minikube is testing without pay for a cluster in a provider. 
-
-So you might need to clean up it when you work with it.
+```bash
+kubectl get deployments
+```
 
 ```bash
-# Delete all pods
+kubectl describe deployments nginx-deployment
+```
+
+```bash
+kubectl rollout history
+```
+
+### Clean up cluster
+
+You might need to clean up it when you work with it.
+
+Delete all pods:
+
+```bash
 kubectl delete pods --all
+```
 
-# Delete all services 
+Delete all services:
+
+```bash
 kubectl delete services --all
+```
 
-# Delete all deployments
+Delete all deployments:
+
+```bash
 kubectl delete deployments --all
+```
 
-# Delete all replicasets
+Delete all replicasets:
+
+```bash
 kubectl delete replicasets --all
+```
 
-# Delete all
+Delete all:
+
+```bash
 kubectl delete daemonsets,replicasets,services,deployments,pods,rc --all
-
 ```
 
