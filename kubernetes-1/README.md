@@ -36,6 +36,16 @@ kubectl describe deployments nginx-deployment
 kubectl rollout history
 ```
 
+Then check the status of pod:
+
+```bash
+kubectl get pods
+```
+
+```bash
+kubectl describe pods nginx
+```
+
 ### Clean up cluster
 
 You might need to clean up it when you work with it.
