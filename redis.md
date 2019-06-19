@@ -4,13 +4,20 @@
 
 Open a terminal window an run:
 
-```text
+```bash
 docker run -d --name redis \
     --restart unless-stopped \
     -v /Users/tony/data-db/redis:/data \
     -p 6379:6379 redis:4
 ```
 
-  
+### On Windows
 
+```bash
+# First create a volume 
+docker volume create --name=redisdata
+
+# Run the container
+docker run -d --restart unless-stopped --name redis -v redisdata:/data -d -p 6379:6379 redis:5
+```
 

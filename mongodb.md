@@ -16,29 +16,15 @@ docker run -d --name mongodb \
  Running databases in containers is not suggested for production environment
 {% endhint %}
 
-{% hint style="info" %}
-On WSL you could have issues mounting the volume into the container.
-
-
+## On Windows
 
 ```bash
-docker volume create \
-  --opt type=cifs \
-  --opt device=c:\Users\tonyd\data-db\mongodb \
-  --opt o=username=DockerHost,password=dockerhost,file_mode=0777,dir_mode=0777,uid=2000,gid=2000 \
-  mongodb
+# create a volume
+docker volume create --name=mongodata
+
+# run mongodb
+docker run -d --restart unless-stopped --name mongodb -v mongodata:/data/db -p 27017:27017 mongo:4
 ```
-
-
-
-```bash
-docker run -d --name mongodb \
-    --restart unless-stopped \
-    -v mongodb:/data/db \
-    -v mongodumps:/mongodumps \
-    -p 27017:27017 mongo:3.4
-```
-{% endhint %}
 
 ## Install MongoDB Compass
 
