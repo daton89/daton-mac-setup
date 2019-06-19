@@ -26,6 +26,8 @@ docker volume create --name=mongodata
 docker run -d --restart unless-stopped --name mongodb -v mongodata:/data/db -p 27017:27017 mongo:4
 ```
 
+{% embed url="https://blog.jeremylikness.com/mongodb-on-windows-in-minutes-with-docker-3e412f076762" caption="Read more" %}
+
 ## Install MongoDB Compass
 
 To manage your MongoDB instance we use Compass:
