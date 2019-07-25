@@ -51,9 +51,19 @@ After you make changes in config.yml, you must remove existing sentry containers
 
 \`docker-compose stop && docker-compose down && rm -rf data/\`
 
+### Adding Integrations
+
+#### Github Integration
+
+{% embed url="https://docs.sentry.io/server/integrations/github/" %}
+
+#### Slack Integration
+
+{% embed url="https://forum.sentry.io/t/how-to-configure-slack-in-your-on-prem-sentry/3463" %}
 
 
-#### Updating Sentry
+
+### Updating Sentry
 
 Updating Sentry using Docker Compose is really simple.
 
