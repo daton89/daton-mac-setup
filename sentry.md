@@ -53,5 +53,15 @@ After you make changes in config.yml, you must remove existing sentry containers
 
 
 
+#### Updating Sentry
+
+Updating Sentry using Docker Compose is really simple.
+
+1. Set the latest version in Dockerfile
+2. Run `docker-compose build --pull`
+3. Load the Sentry Secret stored in the ./env file `source ./env`
+4. Run `docker-compose run --rm web upgrade` \(Run new migrations\)
+5. Run `docker-compose up -d` to recreate the services
+
 {% embed url="https://github.com/getsentry/onpremise" %}
 
