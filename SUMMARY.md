@@ -44,6 +44,7 @@
   * [Kubernetes on DigitalOcean](kubernetes-1/kubernetes.md)
   * [K8S with Traefik as IC](kubernetes-1/k8s-with-traefik-as-ic.md)
   * [Kubernetes managed by StackPointCloud](kubernetes-1/kubernetes-managed-by-stackpointcloud.md)
+  * [Use Docker Images from Private Registry](kubernetes-1/use-docker-images-from-private-registry.md)
 * [Web Apps](web-apps.md)
 * [Use a minikube locally](use-a-minikube-locally.md)
 
