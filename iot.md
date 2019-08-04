@@ -34,7 +34,15 @@ To reattach to the container:
 docker attach nodered
 ```
 
-Now we can open the browser and navigate to http://localhost:1880.
+Now we can open the browser and navigate to [http://localhost:1880](http://localhost:1880).
+
+### Install the Node RED Dashboard
+
+Click on the top right menu icon and select Manage Palette, click the Install tab, then search node-red-dashboard and install it.
+
+To check that the dashboard is correctly installed navigate to [http://localhost:1880/ui](http://localhost:1880/ui).
+
+Read this [Tutorial ](https://randomnerdtutorials.com/getting-started-with-node-red-dashboard/)to set up a Dashboard.
 
 ### Deploy Node RED in production
 
