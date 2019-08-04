@@ -1,6 +1,6 @@
 # IoT
 
-## Node Red
+## Node RED
 
 I decided to build my first IoT project to automate my small garden with Peperoncini and Tomatos plants. 
 
