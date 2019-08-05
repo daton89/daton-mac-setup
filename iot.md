@@ -77,7 +77,7 @@ log_dest file /mosquitto/log/mosquitto.log
 Run the container:
 
 ```bash
-docker run --name mqttbroker -it -p 1883:1883 -p 9001:9001 -v c:/docker-volume/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf -v c:/docker-volume/mosquitto/data:/mosquitto/data -v c:/docker-volume/mosquitto/log:/mosquitto/log eclipse-mosquitto
+docker run --name mqttbroker -d -p 1883:1883 -p 9001:9001 -v c:/docker-volume/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf -v c:/docker-volume/mosquitto/data:/mosquitto/data -v c:/docker-volume/mosquitto/log:/mosquitto/log eclipse-mosquitto
 ```
 
 More info on the [Mosquitto Official Docker Hub Image](https://hub.docker.com/_/eclipse-mosquitto).
