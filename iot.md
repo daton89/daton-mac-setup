@@ -100,3 +100,29 @@ Now that we’ve subscribed to our topic, let’s move back to the Publish tab, 
 
 If we switch back to the Subscribe tab, we should now see our home/garden/fountain topic has a message with hello world!
 
+## Openhabian
+
+### VPN
+
+We may need to access the infrastructure from outside of our private network.
+
+To do that we need to setup a VPN connection.
+
+OpenVPN was added following this \[guide\]\([https://www.cyberciti.biz/faq/linux-import-openvpn-ovpn-file-with-networkmanager-commandlin$](https://www.cyberciti.biz/faq/linux-import-openvpn-ovpn-file-with-networkmanager-commandlin$)
+
+To use the openvpn official service \(on boot as well\) follow this \[link\]\([https://www.maketecheasier.com/connect-vpn-automatically-li$](https://www.maketecheasier.com/connect-vpn-automatically-li$)
+
+To use the port forwarding and host the OpenVPN server directly on the raspberry follow this \[link\]\([https://www.smarthomeblog.net/ra$](https://www.smarthomeblog.net/ra$)
+
+To make the VPN start on boot edit the rc.local file:
+
+`sudo nano /etc/rc.local`
+
+At the end of the file add this content:
+
+```bash
+## Connecto to the OpenVPN
+echo "Connect to OpenVPN..."
+nmcli connection up openhabian
+```
+
