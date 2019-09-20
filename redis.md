@@ -7,7 +7,7 @@ Open a terminal window an run:
 ```bash
 docker run -d --name redis \
     --restart unless-stopped \
-    -v /Users/tony/data-db/redis:/data \
+    -v ~/data-db/redis:/data \
     -p 6379:6379 redis:4
 ```
 
