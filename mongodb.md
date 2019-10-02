@@ -7,8 +7,8 @@ Open a terminal window and run:
 ```bash
 docker run -d --name mongodb \
     --restart unless-stopped \
-    -v /Users/tony/data-db/mongodb:/data/db \
-    -v /Users/tony/data-db/mongodumps:/mongodumps \
+    -v ~/data-db/mongodb:/data/db \
+    -v ~/data-db/mongodumps:/mongodumps \
     -p 27017:27017 mongo:3.4
 ```
 
