@@ -64,15 +64,13 @@ On Windows we need to create the volumes into C:/docker-volume/ but not in C:/Us
 
 Create a file for configure persistence and logs:
 
-{% code-tabs %}
-{% code-tabs-item title="mosquitto.conf" %}
+{% code title="mosquitto.conf" %}
 ```text
 persistence true
 persistence_location /mosquitto/data/
 log_dest file /mosquitto/log/mosquitto.log
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Run the container:
 

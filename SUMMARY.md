@@ -48,4 +48,5 @@
   * [Use a minikube locally](kubernetes-1/use-a-minikube-locally.md)
 * [Web Apps](web-apps.md)
 * [IoT](iot.md)
+* [NVIDIA](nvidia.md)
 

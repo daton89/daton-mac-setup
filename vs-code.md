@@ -112,6 +112,14 @@ A new Chrome window with debugger mode enabled will appear on our screen.
 
 {% embed url="https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code?WT.mc\_id=vscodecandothat-dotcom-team" %}
 
+
+
+## Troubleshootings
+
+If you notice that your system is not able to watch file changes in a large workspace, check this out:
+
+{% embed url="https://code.visualstudio.com/docs/setup/linux\#\_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc" %}
+
 ## More resources 
 
 {% embed url="https://vscodecandothat.com/" %}
