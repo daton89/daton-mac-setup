@@ -1,13 +1,14 @@
 # Postgres
 
-## Running MongoDB in a docker container
+## Running Postgres in a docker container
 
 Open a terminal window an run:
 
 ```bash
 docker run -d --name postgres \
     --restart unless-stopped \
-    -v /Users/tony/data-db/postgres:/var/lib/postgresql/data \
+    -v ~/Documents/data-db/postgres:/var/lib/postgresql/data \
+    -e POSTGRES_PASSWORD=mysecretpassword \
     -p 5432:5432 postgres:10
 ```
 
